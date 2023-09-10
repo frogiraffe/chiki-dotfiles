@@ -1,0 +1,43 @@
+font pango:FiraCode Nerd 12
+smart_gaps on
+popup_during_fullscreen smart
+hide_edge_borders none
+
+corner_radius 8
+scratchpad_minimize disable
+smart_corner_radius on
+
+shadows enable
+shadow_blur_radius 10
+shadow_color #1D2021
+
+gaps inner 8
+gaps outer 8
+
+blur enable
+blur_passes 3
+blur_radius 2
+
+default_border pixel 2
+default_floating_border none
+
+# class                 border  bground text    indicator child_border
+client.focused          #83A598 #458588 #FFFFFF #83A598   #83A598
+client.focused_inactive #282828 #1D2021 #FFFFFF #282828   #282828
+client.unfocused        #282828 #1D2021 #FFFFFF #282828   #282828
+client.urgent           #CC241D #FB4934 #FFFFFF #CC241D   #cc241d
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+client.background       #FFFFFF
+
+set $gnome-schema org.gnome.desktop.interface
+
+
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'gruvbox-dark-gtk'
+    gsettings set $gnome-schema icon-theme 'gruvbox-dark-icons-gtk'
+    gsettings set $gnome-schema cursor-theme 'Simp1e-Gruvbox-Dark'
+}
+seat seat0 xcursor_theme Simp1e-Gruvbox-Dark 8
+
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK

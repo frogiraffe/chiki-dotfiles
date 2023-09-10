@@ -1,0 +1,21 @@
+input "1008:911:HP,_Inc_HyperX_Alloy_Origins_65" {
+    xkb_layout us,tr
+    xkb_options grp:win_space_toggle,ctrl:nocaps
+# #repea rate
+    repeat_delay 250
+    repeat_rate 100
+}
+input "1267:12765:ELAN06FA:00_04F3:31DD_Touchpad" {
+    tap enabled
+    scroll_factor 0.5
+    dwt disabled
+}
+input "4152:6192:SteelSeries_SteelSeries_Rival_3_Wireless" {
+    scroll_factor 1.4
+    dwt disabled
+}
+input * {
+    dwt disabled
+}
+
+

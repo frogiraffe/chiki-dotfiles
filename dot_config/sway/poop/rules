@@ -1,0 +1,59 @@
+set {
+	$ii inhibit_idle focus
+	$game inhibit_idle focus; floating enable; border none; fullscreen enable; shadows disable
+	$popup floating enable; border pixel 1; sticky enable; shadows enable
+	$float floating enable; border pixel 1; shadows enable
+	$video inhibit_idle fullscreen; border none; max_render_time off
+	$important inhibit_idle open; floating enable; border pixel 1
+	$max inhibit_idle visible; floating enable; sticky enable; border pixel 1
+}
+for_window {
+[class="Yad" instance="yad"] floating enable
+[title="Sign In.*"] floating enable
+[app_id="org.gnome.Nautilus"] floating enable
+[app_id="yad"] floating enable
+[app_id="mpv"] floating enable, resize set 720 480, sticky enable
+[app_id="blueman-manager"] floating enable,  resize set width 40 ppt height 30 ppt
+[class="Xsane" instance="xsane"] floating enable
+[app_id="pavucontrol" ] floating enable, resize set width 40 ppt height 30 ppt
+[title="(?:Open|Save) (?:File|Folder|As)" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt"] $popup
+[title="^(File|Folder)\s*Already Exists\s*—\s*" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt"] $popup
+[title="Confirm to replace files" app_id="dolphin|org.kde.ark|pcmanfm|pcmanfm-qt"] $popup
+
+[class="qt5ct" instance="qt5ct"] floating enable, resize set width 60 ppt height 50 ppt
+[class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
+[app_id="pamac-manager"] floating enable, resize set width 80 ppt height 70 ppt
+[class="Lxappearance"] floating enable, resize set width 60 ppt height 50 ppt
+[class="Godot"] blur disable, opacity 1
+[window_role="pop-up"] floating enable
+[window_role="bubble"] floating enable
+[window_role="task_dialog"] floating enable
+[window_role="Preferences"] floating enable
+[window_role="About"] floating enable
+[window_type="dialog"] floating enable
+[window_type="menu"] floating enable
+[window_type="dialog"] $float; shadows enable
+[window_type="utility"] $float; shadows enable
+[window_type="toolbar"] $float; shadows enable
+[window_type="splash"] $float; shadows enable
+[window_type="menu"] $float; shadows enable
+[window_type="dropdown_menu"] $float; shadows enable
+[window_type="popup_menu"] $float; shadows enable [window_type="tooltip"] $float; shadows enable [window_type="notification"] $float; shadows enable
+[title="File Operation Progress"] floating enable, border pixel 1, sticky enable, resize set width 40 ppt height 30 ppt
+[class="firefox" title="Library"] floating enable, border pixel 1, sticky enable, resize set width 50 ppt height 80 ppt
+[app_id="floating_shell_portrait"] floating enable, border pixel 1, sticky enable, resize set width 30 ppt height 40 ppt
+[title="Picture-in-Picture"] floating enable, sticky enable, resize set 480 270, dim_inactive 0
+[title="htop"] floating enable, resize set width 50 ppt height 70 ppt
+[title="Save File"] floating enable
+[app_id="firefox" title="Firefox — Sharing Indicator"] kill
+[app_id="firefox"] inhibit_idle fullscreen
+[class=".*"] inhibit_idle fullscreen
+[app_id=".*"] inhibit_idle fullscreen
+[app_id="dropterm"] move scratchpad, border pixel 0, shadows disable
+[app_id="discord"] move scratchpad,scratchpad show, border pixel 0, shadows disable
+[instance="discord"] move scratchpad, border pixel 0, shadows disable
+[app_id="swayimg"] floating enable, move position cursor
+[app_id="org.keepassxc.KeePassXC"]  move scratchpad ,border pixel 0, shadows disable
+}
+
+
