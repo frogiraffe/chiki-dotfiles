@@ -8,3 +8,4 @@ exec_always sway-audio-idle-inhibit
 exec_always ~/.config/sway/scripts/swayidle.sh
 exec mako
 exec ~/.config/sway/scripts/keepasxc.sh
+exec swaylock -C ~/.config/swaylock/gruv.conf

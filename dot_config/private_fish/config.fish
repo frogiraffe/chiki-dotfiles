@@ -3,6 +3,11 @@ echo -e '\e]22;left_ptr\e\\'
     # Commands to run in interactive sessions can go here
 end
 
+if test -z $DISPLAY; and test (tty) = "/dev/tty1"
+    ~/.config/sway/scripts/sway
+end
+
+
 # Created by `pipx` on 2023-08-25 19:33:11
 set PATH $PATH /home/chiki/.local/bin
 # sudoedit
