@@ -1,0 +1,11 @@
+font= FiraCode Nerd 10
+border-size=2
+border-radius=8
+background-color=#282828
+text-color=#FFFFFF
+format=<b>%a ⏵</b> %s\n%b
+sort=-time
+margin=5
+padding=0,5,10
+default-timeout=5000
+ignore-timeout=1
