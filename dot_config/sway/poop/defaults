@@ -66,7 +66,7 @@ bindsym $alt+d exec wofi -I -S drun -D key_expand=Tab
 bindsym $alt+x exec clipman --histpath="~/.cache/clipman.json" pick -t wofi --tool-args="--conf=/etc/wofi/config"
 bindsym $alt+Shift+p exec sh ~/.config/sway/scripts/wofi-power.sh
 bindsym $mod+Return exec swaymsg [app_id='dropterm'] scratchpad show  || exec foot -a dropterm
-bindsym $mod+d exec swaymsg [app_id='discord'] scratchpad show  || exec discord
+bindsym $mod+d workspace number 9
 bindsym $alt+i exec foot -e ranger
 bindsym $alt+o exec obsidian
 bindsym Print exec $HOME/.config/sway/scripts/screenshot.sh
