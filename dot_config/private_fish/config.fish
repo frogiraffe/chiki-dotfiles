@@ -26,5 +26,6 @@ alias llm='exa --icons -lbGd --git --sort=modified'                            #
 alias la='exa --icons -lbhHigUmuSa --time-style=long-iso --git --color-scale'  # all list
 alias lx='exa --icons -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
 alias sw='/home/chiki/.config/sway/scripts/sway'
+alias hertz='sh /home/chiki/.config/sway/scripts/hertz.sh'
 set -g fzf_fd_opts --hidden --exclude=.git --exclude=go --exclude=.rustup --exclude=.cargo --exclude=.cache --exclude=.mozilla --exclude=.npm --exclude=.local
 clear
