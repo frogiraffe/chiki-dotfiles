@@ -52,7 +52,7 @@ for_window {
 [app_id="dropterm"] move scratchpad, border pixel 0, shadows disable
 [instance="discord"] move workspace 9
 [app_id="swayimg"] floating enable, move position cursor
-[app_id="org.keepassxc.KeePassXC"]  move workspace 10 ,border pixel 0, shadows disable
+[app_id="org.keepassxc.KeePassXC"]  move scratchpad  ,border pixel 0, shadows disable
 }
 
 
