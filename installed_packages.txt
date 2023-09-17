@@ -6,7 +6,8 @@ gruvbox-dark-icons-gtk
 libva-nvidia-driver
 nwg-look
 paru
-ranger-git
+yazi
+unarchiver
 speedtest-rs
 sway-audio-idle-inhibit-git
 sway-overfocus
@@ -20,6 +21,7 @@ zoxide
 zathura-pdf-mupdf
 zathura-djvu
 ytfzf
+fzf
 wl-clipboard
 waybar
 wlroots-nvidia
