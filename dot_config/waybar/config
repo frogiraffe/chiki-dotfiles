@@ -79,7 +79,7 @@
     "format": "{}°",
     "tooltip": true,
     "interval": 1800,
-    "exec": "wttrbar",
+    "exec": "wttrbar --location Antalya",
     "return-type": "json"
 },
 "custom/media": {

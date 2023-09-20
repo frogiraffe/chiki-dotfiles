@@ -70,6 +70,7 @@ bindsym $mod+d workspace number 9
 bindsym $alt+i exec foot -e ranger
 bindsym $alt+o exec obsidian
 bindsym Print exec $HOME/.config/sway/scripts/screenshot.sh
+bindsym F12 exec grimshot save area - | swappy -f - 
 
 #media keys
 bindsym XF86MonBrightnessDown exec brightnessctl s 5%-

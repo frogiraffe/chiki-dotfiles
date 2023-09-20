@@ -80,3 +80,16 @@ bluez
 bluez-libs
 bluez-utils
 bash-completion
+swappy
+gitui
+go
+lib32-ncurses
+ncurses
+tmux
+htop
+powertop
+eza
+rustup
+ksshaskpass
+zathura-pdf-mupdf
+libsecret
