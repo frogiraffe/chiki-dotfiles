@@ -93,3 +93,5 @@ rustup
 ksshaskpass
 zathura-pdf-mupdf
 libsecret
+betterdiscord-installer
+swappy

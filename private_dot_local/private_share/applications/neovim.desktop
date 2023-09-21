@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Nvim Text Editor
+Comment=Edit text files
+Exec=foot -e nvim
+Terminal=true
+Type=Application
+Categories=Utility;TextEditor;
+StartupNotify=true
+MimeType=text/plain;

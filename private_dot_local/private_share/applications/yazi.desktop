@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Yazi
+Comment=File Manager
+Exec=foot -e yazi
+Terminal=false
+Type=Application
+Icon=Thunar
+StartupNotify=true
+MimeType=inode/directory

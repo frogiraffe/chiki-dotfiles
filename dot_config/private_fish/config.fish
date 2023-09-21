@@ -7,6 +7,24 @@ if test -z $DISPLAY; and test (tty) = "/dev/tty1"
     ~/.config/sway/scripts/sway
 end
 
+function ya
+    set tmp (mktemp -t "yazi-cwd.XXXXX")
+    yazi --cwd-file="$tmp"
+    if test -s "$tmp" -a (cat -- "$tmp") != "$PWD"
+        cd -- (cat -- "$tmp")
+    end
+    rm -f -- "$tmp"
+end
+
+
+function vi
+    if test (count $argv) -eq 0 
+        nvim
+    else
+        chezmoi verify $argv[1] &> /dev/null && chezmoi edit --watch --hardlink=false $argv[1] || nvim $argv
+    end
+end
+
 # Created by `pipx` on 2023-08-25 19:33:11
 set PATH $PATH /home/chiki/.local/bin
 # sudoedit
