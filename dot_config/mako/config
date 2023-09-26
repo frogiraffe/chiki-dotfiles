@@ -11,4 +11,4 @@ default-timeout=5000
 ignore-timeout=1
 
 [app-name="discord" actionable=1]
-on-button-left=invoke-action swaymsg workspace 9
+on-button-left=exec swaymsg workspace 3

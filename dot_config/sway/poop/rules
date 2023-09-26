@@ -29,9 +29,7 @@ for_window {
 [window_role="bubble"] floating enable
 [window_role="task_dialog"] floating enable
 [window_role="Preferences"] floating enable
-[window_role="About"] floating enable
-[window_type="dialog"] floating enable
-[window_type="menu"] floating enable
+[window_role="About"] floating enable [window_type="dialog"] floating enable [window_type="menu"] floating enable
 [window_type="dialog"] $float; shadows enable
 [window_type="utility"] $float; shadows enable
 [window_type="toolbar"] $float; shadows enable
@@ -49,10 +47,9 @@ for_window {
 [app_id="firefox"] inhibit_idle fullscreen
 [class=".*"] inhibit_idle fullscreen
 [app_id=".*"] inhibit_idle fullscreen
-[app_id="dropterm"] move scratchpad, border pixel 0, shadows disable
-[instance="discord"] move workspace 9
+[app_id="dropterm"] move scratchpad, sticky enable
+[instance="discord"] move workspace 3
 [app_id="swayimg"] floating enable, move position cursor
-[app_id="org.keepassxc.KeePassXC"]  move scratchpad  ,border pixel 0, shadows disable
+[app_id="org.keepassxc.KeePassXC"] move scratchpad
+[app_id="swappy"] sticky enable, move position cursor
 }
-
-
