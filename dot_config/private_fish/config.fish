@@ -44,5 +44,5 @@ alias la='eza --icons -lbhHigUmuSa --time-style=long-iso --git --color-scale'  #
 alias lx='eza --icons -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
 alias sw='/home/chiki/.config/sway/scripts/sway'
 alias hertz='sh /home/chiki/.config/sway/scripts/hertz.sh'
-set -g fzf_fd_opts --hidden --exclude=.git --exclude=go --exclude=.rustup --exclude=.cargo --exclude=.cache --exclude=.mozilla --exclude=.npm --exclude=.local
+set -g fzf_fd_opts --hidden --exclude=.git --exclude=go --exclude=.rustup --exclude=.cargo --exclude=.cache --exclude=.mozilla --exclude=.npm --exclude=.local --exclude=.nv --exclude=.pki --exclude=.vim --exclude=.yarn --exclude=.gnupg --exclude=.config/discord/* --exclude=.config --exclude=.node_modules --exclude=.parallel/ --exclude=.subversion/ --exclude=.obsidian/
 clear
