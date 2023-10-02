@@ -28,7 +28,7 @@ wlroots-nvidia
 wofi
 unrar
 unzip
-udisks2
+udiskie
 ttf-firacode-nerd
 ttf-fira-sans
 ttf-fira-mono
