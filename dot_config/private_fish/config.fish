@@ -2,7 +2,6 @@ if status is-interactive
 echo -e '\e]22;left_ptr\e\\'
     # Commands to run in interactive sessions can go here
 end
-
 if test -z $DISPLAY; and test (tty) = "/dev/tty1"
     ~/.config/sway/scripts/sway
 end
@@ -24,6 +23,8 @@ function vi
         chezmoi verify $argv[1] &> /dev/null && chezmoi edit --watch --hardlink=false $argv[1] || nvim $argv
     end
 end
+
+fish_ssh_agent
 
 # Created by `pipx` on 2023-08-25 19:33:11
 set PATH $PATH /home/chiki/.local/bin
