@@ -25,6 +25,8 @@ function vi
 end
 
 fish_ssh_agent
+fzf_configure_bindings --history=\e\cr
+
 
 # Created by `pipx` on 2023-08-25 19:33:11
 set PATH $PATH /home/chiki/.local/bin
