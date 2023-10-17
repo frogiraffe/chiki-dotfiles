@@ -17,7 +17,7 @@ end
 
 
 function vi
-    if test (count $argv) -eq 0 
+    if test (count $argv) -eq 0
         nvim
     else
         chezmoi verify $argv[1] &> /dev/null && chezmoi edit --watch --hardlink=false $argv[1] || nvim $argv
@@ -38,7 +38,7 @@ set -Ux VISUAL /usr/bin/nvim
 set -Ux GOPATH $HOME/.go
 zoxide init fish | source
 theme_gruvbox dark
-alias cat=bat
+alias cat='bat'
 alias ls='eza --icons'                                                          # ls
 alias l='eza --icons --icons-lbF --git'                                                # list, size, type, git
 alias ll='eza --icons -lbGF --git'                                             # long list
