@@ -40,7 +40,7 @@ zoxide init fish | source
 theme_gruvbox dark
 alias cat='bat'
 alias ls='eza --icons'                                                          # ls
-alias l='eza --icons --icons-lbF --git'                                                # list, size, type, git
+alias l='eza --icons --icons -lbF --git'                                                # list, size, type, git
 alias ll='eza --icons -lbGF --git'                                             # long list
 alias llm='eza --icons -lbGd --git --sort=modified'                            # long list, modified date sort
 alias la='eza --icons -lbhHigUmuSa --time-style=long-iso --git --color-scale'  # all list
