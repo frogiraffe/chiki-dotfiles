@@ -30,6 +30,8 @@ fzf_configure_bindings --history=\e\cr
 
 # Created by `pipx` on 2023-08-25 19:33:11
 set PATH $PATH /home/chiki/.local/bin
+# add cargo path
+set PATH $PATH /home/chiki/.cargo/bin
 # sudoedit
 set -Ux SUDO_EDITOR /usr/bin/nvim
 set -Ux EDITOR /usr/bin/nvim

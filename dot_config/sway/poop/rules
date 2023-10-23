@@ -47,9 +47,9 @@ for_window {
 [app_id="firefox"] inhibit_idle fullscreen
 [class=".*"] inhibit_idle fullscreen
 [app_id=".*"] inhibit_idle fullscreen
-[app_id="dropterm"] move scratchpad, sticky enable
-[instance="discord"] move workspace 3
-[app_id="swayimg"] floating enable, move position cursor
+[app_id="dropterm"] move scratchpad, sticky enable, resize 720 480
+[instance="discord"] move workspace 5
+[app_id="swayimg"] floating enable
 [app_id="org.keepassxc.KeePassXC"] move scratchpad
 [app_id="swappy"] sticky enable, move position cursor
 }

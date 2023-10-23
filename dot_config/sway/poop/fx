@@ -9,21 +9,20 @@ smart_corner_radius on
 
 shadows enable
 shadow_blur_radius 20
-shadow_color #000000
-shadow_on_csd enable
+shadow_color #0000007F
 
-gaps inner 15
-gaps outer 15
+gaps inner 10
+gaps outer 10
 
 blur enable
-blur_passes 5
+blur_passes 4
 blur_radius 3
 
-layer_effects "waybar" blur enable,  corner_radius 12
+layer_effects "waybar" blur enable, shadows enable, corner_radius 12
 
 default_border pixel 2
+default_dim_inactive 0.1
 default_floating_border none
-default_dim_inactove 0.4
 
 # class                 border  bground text    indicator child_border
 client.focused          #83A598 #458588 #FFFFFF #83A598   #83A598

@@ -66,11 +66,16 @@ bindsym $alt+d exec wofi -I -S drun -D key_expand=Tab
 bindsym $alt+x exec clipman --histpath="~/.cache/clipman.json" pick -t wofi --tool-args="--conf=/etc/wofi/config"
 bindsym $alt+Shift+p exec sh ~/.config/sway/scripts/wofi-power.sh
 bindsym $mod+Return exec swaymsg [app_id='dropterm'] scratchpad show  || exec foot -a dropterm
-bindsym $mod+d workspace number 9
+bindsym $mod+d exec swaymsg workspace 5 || exec discord
 bindsym $alt+i exec foot -e yazi
 bindsym $alt+o exec obsidian
+bindsym $alt+c exec firefox
 bindsym Print exec $HOME/.config/sway/scripts/screenshot.sh
-bindsym F12 exec grimshot save area - | swappy -f - 
+bindsym F12 exec grimshot save area - | swappy -f -
+bindsym F11 exec grimshot save window - | swappy -f -
+bindsym F10 exec grimshot copy area | notify-send copied area
+bindsym F9 exec grimshot copy window | notify-send copied window
+bindsym F8 exec grimshot copy output | notify-send copied output
 
 #media keys
 bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
@@ -111,4 +116,3 @@ bindsym Mod4+b exec killall -SIGUSR1 waybar
 bar {
 swaybar_command waybar
 }
-
