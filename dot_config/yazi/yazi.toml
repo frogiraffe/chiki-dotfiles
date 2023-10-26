@@ -43,6 +43,11 @@ fallback = [
 	{ exec = 'open "$@"', display_name = "Open"},
 	{ exec = 'open -R "$@"', display_name = "Reveal in Finder"},
 ]
+xlsx = [
+{ exec = 'libreoffice --calc "$@"', block = false, orphan = true, display_name = "Show XLSX"},
+]
+
+
 
 [open]
 rules = [
@@ -65,7 +70,6 @@ rules = [
 	{ mime = "application/x-bzip2", use = "archive" },
 	{ mime = "application/x-7z-compressed", use = "archive" },
 	{ mime = "application/x-rar", use = "archive" },
-
 	{ mime = "*", use = "fallback" },
 ]
 

@@ -1,4 +1,4 @@
-[Default Applications]
+[int Default Applications]
 application/eps=org.pwmt.zathura-pdf-mupdf.desktop
 application/ogg=mpv.desktop
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
