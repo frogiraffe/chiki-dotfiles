@@ -62,13 +62,13 @@ bindsym $alt+Shift+0  move container to workspace number 10
 # bindsym $alt+$up focus up
 # bindsym $alt+$right focus right
 
-bindsym $alt+d exec wofi -I -S drun -D key_expand=Tab
-bindsym $alt+x exec clipman --histpath="~/.cache/clipman.json" pick -t wofi --tool-args="--conf=/etc/wofi/config"
+bindsym $alt+d exec pgrep -x wofi >/dev/null 2>&1 && killall wofi || exec wofi -I -S drun -D key_expand=Tab
+bindsym $alt+x exec pgrep -x wofi >/dev/null 2>&1 && killall wofi ||exec clipman --histpath="~/.cache/clipman.json" pick -t wofi --tool-args="--conf=/etc/wofi/config"
 bindsym $alt+Shift+p exec sh ~/.config/sway/scripts/wofi-power.sh
 bindsym $mod+Return exec swaymsg [app_id='dropterm'] scratchpad show  || exec foot -a dropterm
 bindsym $mod+d exec swaymsg workspace 5 || exec discord
 bindsym $alt+i exec foot -e yazi
-bindsym $alt+o exec obsidian
+bindsym $alt+o exec swaymsg workspace 6 || exec sh ~/.config/sway/scripts/obsidian.sh
 bindsym $alt+c exec firefox
 bindsym Print exec $HOME/.config/sway/scripts/screenshot.sh
 bindsym F12 exec grimshot save area - | swappy -f -

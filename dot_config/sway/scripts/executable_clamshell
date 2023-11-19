@@ -1,5 +1,5 @@
 #!/bin/sh
-output = $(swaymsg -t get_tree | jq '.nodes[] | select(.name | test ("^_;") | not).name')
+output = $(swaymsg -t get_tree | jq -r '.nodes[] | select(.name | test("^_;") | not).name | select(. | contains("eDP"))')
 if grep -q open /proc/acpi/button/lid/LID0/state; then
     swaymsg output $output enable
 else

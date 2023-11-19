@@ -12,3 +12,4 @@ exec ~/.config/sway/scripts/keepasxc.sh
 exec swaylock -C ~/.config/swaylock/gruv.conf
 exec discord
 exec udiskie -a --no-terminal
+exec dex FFPWA-01HF1P3W4T77DK1PZ0FGHGHNYS.desktop

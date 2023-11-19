@@ -27,9 +27,7 @@ for_window {
 [class="Godot"] blur disable, opacity 1
 [window_role="pop-up"] floating enable
 [window_role="bubble"] floating enable
-[window_role="task_dialog"] floating enable
-[window_role="Preferences"] floating enable
-[window_role="About"] floating enable [window_type="dialog"] floating enable [window_type="menu"] floating enable
+[window_role="task_dialog"] floating enable [window_role="Preferences"] floating enable [window_role="About"] floating enable [window_type="dialog"] floating enable [window_type="menu"] floating enable
 [window_type="dialog"] $float; shadows enable
 [window_type="utility"] $float; shadows enable
 [window_type="toolbar"] $float; shadows enable
@@ -52,4 +50,6 @@ for_window {
 [app_id="swayimg"] floating enable
 [app_id="org.keepassxc.KeePassXC"] move scratchpad
 [app_id="swappy"] sticky enable, move position cursor
+[instance="obsidian"] move workspace 6
+[app_id="FFPWA-01HF1P3W4T77DK1PZ0FGHGHNYS"] move workspace 4
 }
