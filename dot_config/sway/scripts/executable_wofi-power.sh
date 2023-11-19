@@ -1,9 +1,9 @@
-#!/bin/bash
-
+# #!/bin/bash
+#
 entries="⇠ Logout\n⏾ Suspend\n⭮ Reboot\n󱣻 Hibernate\n⏻ Shutdown"
 
-selected=$(pgrep -x wofi >/dev/null 2>&1 && killall wofi || echo -e $entries|wofi --width 250 --height 210 --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
-
+selected=$(echo -e $entries|wofi --width 250 --height 210 --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
+# pgrep -x wofi >/dev/null 2>&1 && killall wofi ||
 case $selected in
   logout)
     swaymsg exit;;
