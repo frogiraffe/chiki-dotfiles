@@ -4,11 +4,11 @@
 }
 
 #window {
-  background: rgba(30, 30, 46, 0.6);
+  background: rgba(29, 32, 33, 0.8);
   margin: auto;
   padding: 10px;
   border-radius: 20px;
-  border: 5px solid #1e1e2e;
+  border: 5px solid #1d2021;
 }
 
 #input {
@@ -31,7 +31,7 @@
 }
 
 #entry:selected {
-  background-color: #2e3440;
+  background-color: #282828;
 }
 
 #text {
