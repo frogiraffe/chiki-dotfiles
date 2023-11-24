@@ -66,9 +66,10 @@ bindsym $alt+d exec pgrep -x wofi >/dev/null 2>&1 && killall wofi || exec wofi -
 bindsym $alt+x exec pgrep -x wofi >/dev/null 2>&1 && killall wofi ||exec clipman --histpath="~/.cache/clipman.json" pick -t wofi --tool-args="--conf=/etc/wofi/config"
 bindsym $alt+Shift+p exec sh ~/.config/sway/scripts/wofi-power.sh
 bindsym $mod+Return exec swaymsg [app_id='dropterm'] scratchpad show  || exec foot -a dropterm
-bindsym $mod+d exec swaymsg workspace 5 || exec discord
+bindsym $mod+d exec swaymsg workspace 5 ||exec discord
 bindsym $alt+i exec foot -e yazi
-bindsym $alt+o exec swaymsg workspace 6 || exec sh ~/.config/sway/scripts/obsidian.sh
+# bindsym $alt+o exec sh /home/chiki/.config/sway/scripts/obsidian.sh || swaymsg workspace 6
+bindsym $alt+o exec swaymsg '[class=obsidian]' focus || exec obsidian
 bindsym $alt+c exec firefox
 bindsym Print exec $HOME/.config/sway/scripts/screenshot.sh
 bindsym F12 exec grimshot save area - | swappy -f -
@@ -86,6 +87,7 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl prev
+focus_follows_mouse no
 
 #Modes
 mode "resize" {
