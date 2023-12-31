@@ -24,6 +24,11 @@ function vi
     end
 end
 
+if status is-login
+  ssh-add
+end
+
+
 fish_ssh_agent
 fzf_configure_bindings --history=\e\cr
 
