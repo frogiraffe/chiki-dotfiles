@@ -18,7 +18,7 @@ blur enable
 blur_passes 3
 blur_radius 3
 
-layer_effects "waybar" blur enable, shadows enable, corner_radius 12
+layer_effects "waybar" blur enable, shadows disable, corner_radius 0
 
 default_border pixel 2
 default_dim_inactive 0.1
