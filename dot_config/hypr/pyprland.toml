@@ -20,11 +20,3 @@ animation = "fromBottom"
 command = "webcord"
 lazy = true
 class = "WebCord"
-
-[scratchpads.keepassxc]
-animation = "fromRight"
-command = "keepassxc"
-class = "org.keepassxc.KeePassXC"
-class_match = true
-process_tracking = false
-# size = "1920px 1080px"
