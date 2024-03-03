@@ -1,0 +1,9 @@
+term=foot
+location=center
+width=30%
+hide_scroll=true
+line_wrap=word
+allow_markup=true
+print_command=true
+image_size=20
+lines=8

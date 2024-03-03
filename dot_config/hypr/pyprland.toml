@@ -1,0 +1,30 @@
+[pyprland]
+plugins = ["scratchpads","lost_windows"]
+
+[scratchpads.term]
+animation = "fromTop"
+command = "kitty --class kitty-dropterm"
+class = "kitty-dropterm"
+size = "75% 60%"
+
+[scratchpads.volume]
+animation = "fromRight"
+command = "pavucontrol"
+class = "pavucontrol"
+lazy = true
+size = "40% 90%"
+unfocus = "hide"
+
+[scratchpads.webcord]
+animation = "fromBottom"
+command = "webcord"
+lazy = true
+class = "WebCord"
+
+[scratchpads.keepassxc]
+animation = "fromRight"
+command = "keepassxc"
+class = "org.keepassxc.KeePassXC"
+class_match = true
+process_tracking = false
+# size = "1920px 1080px"
