@@ -39,3 +39,5 @@ end
 
 # Created by `pipx` on 2024-03-04 20:43:17
 set PATH $PATH /home/chiki/.local/bin
+
+alias hertz='sh ~/.config/hypr/scripts/refresh_rate.sh'
