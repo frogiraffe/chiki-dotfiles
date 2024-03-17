@@ -15,10 +15,15 @@
     separator_height = 2
     padding = 8
     horizontal_padding = 8
-    separator_color = "#585858"
-    width = 1
-    color = "#83a598"
     context = ctrl+shift+period
+    width = (0, 350)
+    height = 500
+    offset = 20x30
+    progrerss_bar = true
+    font = JetBrains Mono 12
+    mouse_left_click = close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
 
 [urgency_low]
     background = "#282828"
