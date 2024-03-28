@@ -5,7 +5,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["custom/media" ],
-    "modules-right": ["pulseaudio","backlight","cpu", "memory", "battery","hyprland/language","tray","clock","custom/powermenu"],
+    "modules-right": ["custom/audio_idle_inhibitor","pulseaudio","backlight","cpu", "memory", "battery","tray","clock","custom/powermenu"],
 
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -132,11 +132,19 @@
         "format": "󰐥",
         "on-click": "sh ~/.config/hypr/scripts/wofi-power.sh",
 },
-"hyprland/language": {
-    "format": "{}",
-    "format-en": "us",
-    "format-tr": "tr",
-},
+
+	"custom/audio_idle_inhibitor": {
+		"format": "{icon}",
+		"exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
+		"exec-if": "which sway-audio-idle-inhibit",
+		"return-type": "json",
+		"format-icons": {
+			"output": "",
+			"input": "",
+			"output-input": "  ",
+			"none": ""
+		}
+	},
 
 //"pulseaudio/slider": {
 //    "min": 0,

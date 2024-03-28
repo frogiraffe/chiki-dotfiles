@@ -8,37 +8,37 @@ selected=$(echo -e "$entries" | wofi --show=dmenu)
 
 case $selected in
     "output")
-        grimshot copy output;;
+        grimshot --wait 1 copy output;;
     "area")
-        grimshot copy area;;
+        grimshot --wait 1 copy area;;
     "window")
-        grimshot copy window;;
+        grimshot --wait 1 copy window;;
     "active")
-        grimshot copy active;;
+        grimshot --wait 1 copy active;;
     "save")
         save_selected=$(echo -e "$save_entries" | wofi --show=dmenu)
         case $save_selected in
             "output")
-                grimshot save output;;
-            "area")
-                grimshot save area;;
+                grimshot --wait 1 save output;;
+             "area")
+                grimshot --wait 1 save area;;
             "window")
-                grimshot save window;;
+                grimshot --wait 1 save window;;
             "active")
-                grimshot save active;;
+                grimshot --wait 1 save active;;
         esac
     ;;
     "edit")
         edit_selected=$(echo -e "$edit_entries" | wofi --show=dmenu)
         case $edit_selected in
             "output")
-                grimshot save output - | swappy -f - ;;
+                grimshot --wait 1 save output - | swappy -f - ;;
             "area")
-                grimshot save area - | swappy -f - ;;
+                grimshot --wait 1 save area - | swappy -f - ;;
             "window")
-                grimshot save window - | swappy -f - ;;
+                grimshot --wait 1 save window - | swappy -f - ;;
             "active")
-                grimshot save active - | swappy -f - ;;
+                grimshot --wait 1 save active - | swappy -f - ;;
         esac
     ;;
 esac

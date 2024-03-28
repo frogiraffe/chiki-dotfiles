@@ -11,5 +11,3 @@ if [[ $new_refresh_rate == 165 ]]; then
 else
   swaymsg output "*" mode 1920x1080@60.004Hz
 fi
-
-
