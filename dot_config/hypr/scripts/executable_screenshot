@@ -8,37 +8,37 @@ selected=$(echo -e "$entries" | wofi --show=dmenu)
 
 case $selected in
     "output")
-        grimshot --wait 1 copy output;;
+        grimshot --wait 1 --notify  copy output;;
     "area")
-        grimshot --wait 1 copy area;;
+        grimshot --wait 1 --notify copy area;;
     "window")
-        grimshot --wait 1 copy window;;
+        grimshot --wait 1 --notify copy window;;
     "active")
-        grimshot --wait 1 copy active;;
+        grimshot --wait 1 --notify copy active;;
     "save")
         save_selected=$(echo -e "$save_entries" | wofi --show=dmenu)
         case $save_selected in
             "output")
-                grimshot --wait 1 save output;;
+                grimshot --wait 1 --notify save output;;
              "area")
-                grimshot --wait 1 save area;;
+                grimshot --wait 1 --notify save area;;
             "window")
-                grimshot --wait 1 save window;;
+                grimshot --wait 1 --notify save window;;
             "active")
-                grimshot --wait 1 save active;;
+                grimshot --wait 1 --notify save active;;
         esac
     ;;
     "edit")
         edit_selected=$(echo -e "$edit_entries" | wofi --show=dmenu)
         case $edit_selected in
             "output")
-                grimshot --wait 1 save output - | swappy -f - ;;
+                grimshot --wait 1 --notify save output - | swappy -f - ;;
             "area")
-                grimshot --wait 1 save area - | swappy -f - ;;
+                grimshot --wait 1 --notify save area - | swappy -f - ;;
             "window")
-                grimshot --wait 1 save window - | swappy -f - ;;
+                grimshot --wait 1 --notify save window - | swappy -f - ;;
             "active")
-                grimshot --wait 1 save active - | swappy -f - ;;
+                grimshot --wait 1 --notify save active - | swappy -f - ;;
         esac
     ;;
 esac
