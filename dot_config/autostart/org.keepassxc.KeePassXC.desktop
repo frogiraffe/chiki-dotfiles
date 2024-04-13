@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=KeePassXC
 GenericName=Password Manager
-Exec=keepassxc
-TryExec=keepassxc
+run=keepassxc
+Tryrun=keepassxc
 Icon=keepassxc
 StartupWMClass=keepassxc
 StartupNotify=true

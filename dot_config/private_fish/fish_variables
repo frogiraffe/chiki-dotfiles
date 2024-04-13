@@ -4,7 +4,7 @@ SETUVAR --export EDITOR:/usr/bin/nvim
 SETUVAR --export GEM_HOME:/home/chiki/\x2egem
 SETUVAR --export --path GOPATH:/home/chiki/\x2ego
 SETUVAR --export --path PATH:/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/var/lib/flatpak/exports/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/usr/lib/rustup/bin\x1e/home/chiki/\x2elocal/bin\x1e\x2ecargo/bin
-SETUVAR --export SSH_AUTH_SOCK:/run/user/1000/ssh\x2dagent\x2esocket
+SETUVAR --export SSH_AUTH_SOCK:/tmp/ssh\x2dXXXXXXPtkFd1/agent\x2e17938
 SETUVAR --export SUDO_EDITOR:/usr/bin/nvim
 SETUVAR --export SYSTEMD_EDITOR:/usr/bin/nvim
 SETUVAR --export VISUAL:/usr/bin/nvim
@@ -19,7 +19,6 @@ SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fish
 SETUVAR _fisher_jorgebucaran_2F_hydro_files:\x7e/\x2econfig/fish/functions/fish_mode_prompt\x2efish\x1e\x7e/\x2econfig/fish/functions/fish_prompt\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/hydro\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/hydro\x1ejethrokuan/z
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR _hydro_git_10267:\x1d
 SETUVAR _hydro_git_13307:main\u2022\x20
 SETUVAR _hydro_git_138196:main\u2022\x20
 SETUVAR _hydro_git_15187:main\u2022\x20
@@ -29,7 +28,6 @@ SETUVAR _hydro_git_1566:\x1d
 SETUVAR _hydro_git_15683:main\u2022\x20
 SETUVAR _hydro_git_16202:main\u2022\x20
 SETUVAR _hydro_git_19254:main\u2022\x20
-SETUVAR _hydro_git_1942:main\u2022\x20
 SETUVAR _hydro_git_22206:main\u2022\x20
 SETUVAR _hydro_git_23454:main\u2022\x20
 SETUVAR _hydro_git_23502:main\u2022\x20
@@ -54,7 +52,6 @@ SETUVAR _hydro_git_38411:main\u2022\x20
 SETUVAR _hydro_git_39385:main\u2022\x20
 SETUVAR _hydro_git_43269:main\u2022\x20
 SETUVAR _hydro_git_44246:main\u2022\x20
-SETUVAR _hydro_git_4489:main\u2022\x20
 SETUVAR _hydro_git_45150:main\u2022\x20
 SETUVAR _hydro_git_4653:main\x20
 SETUVAR _hydro_git_46570:main\u2022\x20
@@ -101,4 +98,4 @@ SETUVAR fish_pager_color_description:yellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/chiki/\x2egem/ruby/3\x2e0\x2e0/bin\x1e/home/chiki/\x2elocal/share/gem/ruby/3\x2e0\x2e0/bin\x1e/home/chiki/\x2ecargo/bin
+SETUVAR fish_user_paths:/home/chiki/\x2elocal/bin\x1e/home/chiki/\x2egem/ruby/3\x2e0\x2e0/bin\x1e/home/chiki/\x2elocal/share/gem/ruby/3\x2e0\x2e0/bin\x1e/home/chiki/\x2ecargo/bin

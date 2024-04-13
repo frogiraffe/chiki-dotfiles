@@ -130,7 +130,7 @@
 
     "custom/powermenu": {
         "format": "󰐥",
-        "on-click": "sh ~/.config/hypr/scripts/wofi-power.sh",
+        "on-click": "pgrep -x wofi >/dev/null 2>&1 && killall wofi || sh ~/.config/hypr/scripts/wofi-power.sh",
 },
 
 	"custom/audio_idle_inhibitor": {

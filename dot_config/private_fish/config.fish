@@ -1,4 +1,4 @@
-Gfunction ya
+function ya
     set tmp (mktemp -t "yazi-cwd.XXXXX")
     yazi --cwd-file="$tmp"
     if test -s "$tmp" -a (cat -- "$tmp") != "$PWD"
@@ -15,7 +15,7 @@ alias llm='eza --icons -lbGd --git --sort=modified'                            #
 alias la='eza --icons -lbhHigUmuSa --time-style=long-iso --git --color-scale'  # all list
 alias lx='eza --icons -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
 alias chi='chezmoi edit --apply'
- alias 'gitui'='eval $(ssh-agent) && ssh-add ~/.ssh/id_ed25519 && gitui'
+
 set -Ux SUDO_EDITOR /usr/bin/nvim
 set -Ux EDITOR /usr/bin/nvim
 set -Ux SYSTEMD_EDITOR /usr/bin/nvim

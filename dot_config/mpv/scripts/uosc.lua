@@ -619,7 +619,7 @@ end
 
 -- Click detection
 if options.click_threshold > 0 then
-	-- Executes custom command for clicks shorter than `options.click_threshold`
+	-- runutes custom command for clicks shorter than `options.click_threshold`
 	-- while filtering out double clicks.
 	local click_time = options.click_threshold / 1000
 	local doubleclick_time = mp.get_property_native('input-doubleclick-time') / 1000
