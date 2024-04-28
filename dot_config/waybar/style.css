@@ -9,37 +9,97 @@
 }
 
 window#waybar {
-  background-color: rgba(29, 32, 32, 0.95);
+  background-color: rgba(29, 32, 32, 0);
   color: white;
 }
 
-#window {
-  font-weight: bold;
-  font-family: "Ubuntu";
-}
-/*
+/* #window { */
+/*   font-weight: bold; */
+/*   font-family: "Ubuntu"; */
+/* } */
+
 #workspaces {
-    padding: 0 5px;
+  background: #282828;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 10px;
+  /* padding-right: 5px; */
+  padding-left: 0px;
+  padding-bottom: 1px;
+  border: 1px solid #282828;
 }
-*/
 
 #workspaces button {
-  padding: 0 5px;
-  background: transparent;
+  padding: 2px;
+  background: #282828;
+  /* background: transparent; */
   color: white;
+  border-radius: 12px;
   border-top: 2px solid transparent;
+}
+
+#workspaces button.active {
+  color: #d65d0e;
 }
 
 #workspaces button.focused {
   color: #c9545d;
-  border-top: 2px solid #c9545d;
+  /* border-top: 2px solid #c9545d; */
+}
+
+#workspaces button:hover {
+  padding: 0 2px;
+  color: #d79921;
+  background: #504945;
+  border-radius: 12px;
 }
 
 #mode {
-  background: #64727d;
-  border-bottom: 3px solid white;
+  background: #282828;
+  border-radius: 12px;
+  margin-left: 10px;
+  padding-right: 5px;
+  padding-left: 0px;
+  padding-bottom: 3px;
+  border: 1px solid #282828;
+}
+#clock,
+#battery,
+#cpu,
+#memory,
+#pulseaudio,
+#tray,
+#mode,
+#custom-wall,
+#idle_inhibitor,
+#custom-media,
+#backlight,
+#language,
+#custom-audio_idle_inhibitor,
+#custom-scratchpad_indicator,
+#custom-powermenu {
+  padding: 0px 10px;
+  margin: 3px 3px;
+  /* margin-top: 10px; */
 }
 
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#pulseaudio:hover,
+#tray:hover,
+#mode:hover,
+#custom-wall:hover,
+#idle_inhibitor:hover,
+#custom-media:hover,
+#backlight:hover,
+#language:hover,
+#custom-audio_idle_inhibitor:hover,
+#custom-scratchpad_indicator:hover,
+#custom-powermenu:hover {
+  background: #d65d0e;
+}
 
 #clock,
 #battery,
@@ -56,12 +116,24 @@ window#waybar {
 #custom-audio_idle_inhibitor,
 #custom-scratchpad_indicator,
 #custom-powermenu {
-  padding: 0 8px;
-  margin: 0 2px;
+  color: #fbf1c7;
+  background: #282828;
+  border: 1px solid #282828;
+  border-radius: 12px;
 }
 
+/* window#waybar.empty #window { */
+/*   border: 0px; */
+/*   margin: 0px; */
+/*   padding: 0px; */
+/*   background-color: transparent; */
+/* } */
+
 #clock {
-  font-weight: bold;
+  /* font-weight: bold; */
+  /* border-radius: 0px 10px 10px 0px; */
+  /* margin-right: 10px; */
+  /* border-right: 0px; */
 }
 
 #battery {
@@ -102,12 +174,18 @@ window#waybar {
 }
 
 #custom-media {
+  /* color: #fbf1c7; */
+  /* background: #282828; */
+  border-radius: 12px;
 }
 
 #idle_inhibitor {
 }
 
 #custom-weather {
+  color: #fbf1c7;
+  background: #282828;
+  border: 1px solid #282828;
 }
 
 #network.disconnected {
@@ -124,22 +202,21 @@ window#waybar {
 }
 
 #pulseaudio-slider slider {
-    min-height: 10px;
-    min-width: 2px;
-    background-color: #458588;
-    border-radius: 8px;
-    box-shadow: none;
-
-  }
+  min-height: 10px;
+  min-width: 2px;
+  background-color: #458588;
+  border-radius: 8px;
+  box-shadow: none;
+}
 #pulseaudio-slider trough {
-    min-height: 5px;
-    min-width: 100px;
-    border-radius: 5px;
-    background-color: #7c6f64;
+  min-height: 5px;
+  min-width: 100px;
+  border-radius: 5px;
+  background-color: #7c6f64;
 }
 #pulseaudio-slider highlight {
-    min-height: 3px;
-    min-width: 50px;
-    border-radius: 5px;
-    background-color: #665c34;
+  min-height: 3px;
+  min-width: 50px;
+  border-radius: 5px;
+  background-color: #665c34;
 }

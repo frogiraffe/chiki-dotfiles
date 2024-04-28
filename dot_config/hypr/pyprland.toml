@@ -14,9 +14,3 @@ class = "pavucontrol"
 lazy = true
 size = "40% 90%"
 unfocus = "hide"
-
-[scratchpads.webcord]
-animation = "fromBottom"
-command = "webcord"
-lazy = true
-class = "WebCord"

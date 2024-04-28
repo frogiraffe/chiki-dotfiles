@@ -14,12 +14,19 @@
         "all-outputs": false,
         "format": "{icon}",
         "format-icons": {
-            "5": "󰙯",
-            "6": "",
-            "1": "",
-            "3": "",
-            "4": "",
-            "2": "",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+"4": "4",
+"5": "5",
+"6": "6",
+"7": "7",
+"8": "8",
+"9": "9",
+"10": "10",
+"11": "11",
+"12": "12",
+
             "urgent": "",
             "focused": "",
             "default": "",
@@ -141,10 +148,14 @@
 		"format-icons": {
 			"output": "",
 			"input": "",
-			"output-input": "  ",
+			"output-input": "",
 			"none": ""
 		}
 	},
+"hyprland/language": {
+    "format-en": "en",
+    "format-tr": "tr",
+},
 
 //"pulseaudio/slider": {
 //    "min": 0,

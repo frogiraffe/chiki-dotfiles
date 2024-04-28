@@ -41,3 +41,4 @@ end
 set PATH $PATH /home/chiki/.local/bin
 
 alias hertz='sh ~/.config/hypr/scripts/refresh_rate.sh'
+fish_ssh_agent
