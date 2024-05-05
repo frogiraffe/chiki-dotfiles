@@ -1,44 +1,38 @@
 #!/bin/bash
 
-entries="output\narea\nwindow\nactive\nsave\nedit"
+entries="region\noutput\nwindow\nsave\nedit"
 
-save_entries="output\narea\nwindow\nactive"
-edit_entries="output\narea\nwindow\nactive"
+save_entries="region\noutput\nwindow\n"
+edit_entries="region\noutput\nwindow\n"
 selected=$(echo -e "$entries" | wofi --show=dmenu)
 
 case $selected in
     "output")
-        grimshot  --notify  copy output;;
-    "area")
-        grimshot  --notify copy area;;
+        hyprshot --clipboard-only -m output;;
+    "region")
+        hyprshot --clipboard-only -m region;;
     "window")
-        grimshot  --notify copy window;;
-    "active")
-        grimshot  --notify copy active;;
+        hyprshot --clipboard-only -m window;;
     "save")
         save_selected=$(echo -e "$save_entries" | wofi --show=dmenu)
         case $save_selected in
             "output")
-                grimshot  --notify save output;;
-             "area")
-                grimshot  --notify save area;;
+                hyprshot -m output;;
+             "region")
+                hyprshot -m region;;
             "window")
-                grimshot  --notify save window;;
-            "active")
-                grimshot  --notify save active;;
+                hyprshot    -m window;;
         esac
     ;;
     "edit")
         edit_selected=$(echo -e "$edit_entries" | wofi --show=dmenu)
         case $edit_selected in
             "output")
-                grimshot  --notify save output - | swappy -f - ;;
-            "area")
-                grimshot  --notify save area - | swappy -f - ;;
+                hyprshot --clipboard-only -m output --raw | swappy -f -;;
+            "region")
+                hyprshot --clipboard-only  -m region --raw | swappy -f -;;
             "window")
-                grimshot  --notify save window - | swappy -f - ;;
-            "active")
-                grimshot  --notify save active - | swappy -f - ;;
+                hyprshot --clipboard-only -m window --raw | swappy -f -;;
         esac
     ;;
 esac

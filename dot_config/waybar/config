@@ -1,6 +1,6 @@
 {
     "layer": "top", // Waybar at top layer
-    "position": "bottom", // Waybar at the bottom of your screen
+    "position": "top", // Waybar at the bottom of your screen
     "height": 20, // Waybar height
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],

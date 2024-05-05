@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo sh -c "echo 1 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode"
+sudo sh -c "echo 1 > /sys/bus/platform/drivers/ideapad_acpi/VPC20.5:00/conservation_mode"
 echo "conv_on"
 

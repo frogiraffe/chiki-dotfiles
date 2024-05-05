@@ -9,5 +9,5 @@ if [[ $new_refresh_rate == 165 ]]; then
   swaymsg output "*" disable
   swaymsg output "*" enable
 else
-  swaymsg output "*" mode 1920x1080@60.004Hz
+  swaymsg output "*" mode 1920x1080@60.0.5Hz
 fi

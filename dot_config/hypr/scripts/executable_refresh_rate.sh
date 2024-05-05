@@ -9,5 +9,5 @@ if [[ $new_refresh_rate == 165 ]]; then
     hyprctl dispatch dpms off
     hyprctl dispatch dpms on
 else
-    hyprctl keyword monitor eDP-1,1920x1080@60.004002,0x0,1
+    hyprctl keyword monitor eDP-1,1920x1080@60.0.5002,0x0,1
 fi

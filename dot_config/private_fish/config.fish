@@ -24,7 +24,6 @@ set -Ux GOPATH $HOME/.go
 
 
 if status is-interactive
-    # Commands to run in interactive sessions can go here
 end
 set fish_greeting
 
@@ -41,4 +40,3 @@ end
 set PATH $PATH /home/chiki/.local/bin
 
 alias hertz='sh ~/.config/hypr/scripts/refresh_rate.sh'
-fish_ssh_agent
