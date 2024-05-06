@@ -24,7 +24,7 @@ set -Ux GOPATH $HOME/.go
 
 
 if status is-interactive
-    tmux new-session -A main
+
 end
 set fish_greeting
 
