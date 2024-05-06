@@ -24,6 +24,7 @@ set -Ux GOPATH $HOME/.go
 
 
 if status is-interactive
+    tmux new-session -A main
 end
 set fish_greeting
 
@@ -40,3 +41,4 @@ end
 set PATH $PATH /home/chiki/.local/bin
 
 alias hertz='sh ~/.config/hypr/scripts/refresh_rate.sh'
+fish_vi_key_bindings
