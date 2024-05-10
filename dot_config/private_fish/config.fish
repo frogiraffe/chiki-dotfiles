@@ -41,4 +41,4 @@ end
 set PATH $PATH /home/chiki/.local/bin
 
 alias hertz='sh ~/.config/hypr/scripts/refresh_rate.sh'
-fish_vi_key_bindings
+# fish_vi_key_bindings
