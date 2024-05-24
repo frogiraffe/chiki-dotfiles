@@ -1,0 +1,32 @@
+live_config_reload = true
+import = [
+"~/.config/alacritty/gruvbox_material.toml"
+]
+
+[font]
+    size = 14.0
+
+    [font.bold]
+        family = "Mononoki Nerd Font"
+
+    [font.bold_italic]
+        family = "JetBrainsMono Nerd Font"
+    [font.italic]
+        family = "JetBrainsMono Nerd Font"
+    [font.normal]
+        family = "JetBrainsMono Nerd Font"
+
+
+[scrolling]
+    history    = 10000
+    multiplier = 4
+
+[selection]
+    save_to_clipboard     = true
+    semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[shell]
+    args    = ["-l", "-c", "tmux attach || tmux"]
+    program = "/usr/bin/fish"
+[window]
+    opacity = 0.8
