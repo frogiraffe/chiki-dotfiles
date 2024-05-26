@@ -6,7 +6,7 @@
     show_age_threshold = 60
     word_wrap = yes
     ignore_newline = no
-    transparency = 0
+    transparency = 1
     idle_threshold = 120
     monitor = 0
     follow = mouse
@@ -16,11 +16,11 @@
     padding = 8
     horizontal_padding = 8
     context = ctrl+shift+period
-    width = (0, 350)
+    width = (0, 300)
     height = 500
     offset = 20x30
     progrerss_bar = true
-    font = JetBrains Mono 12
+    font = Mononoki Mono 12
     mouse_left_click = close_current
     mouse_middle_click = do_action, close_current
     mouse_right_click = close_all
@@ -28,12 +28,12 @@
 [urgency_low]
     background = "#282828"
     foreground = "#ebdbb2"
-    timeout = 5
+    timeout = 3
 
 [urgency_normal]
     background = "#282828"
     foreground = "#ebdbb2"
-    timeout = 20
+    timeout = 3
 
 [urgency_critical]
     background = "#282828"

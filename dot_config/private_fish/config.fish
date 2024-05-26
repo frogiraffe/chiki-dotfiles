@@ -9,10 +9,9 @@ end
 
 alias cat='bat'
 alias ls='eza --icons'                                                          # ls
-alias l='eza --icons --icons -lbF --git'                                                # list, size, type, git
-alias ll='eza --icons -lbGF --git'                                             # long list
+alias l='eza --icons --icons -lbF --git'                                                # list, size, type, git alias ll='eza --icons -lbGF --git'                                             # long list
 alias llm='eza --icons -lbGd --git --sort=modified'                            # long list, modified date sort
-alias la='eza --icons -lbhHigUmuSa --time-style=long-iso --git --color-scale'  # all list
+alias la='eza --icons -lbhHiga  --git '  # all list
 alias lx='eza --icons -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
 alias chi='chezmoi edit --apply'
 
@@ -42,3 +41,4 @@ set PATH $PATH /home/chiki/.local/bin
 
 alias hertz='sh ~/.config/hypr/scripts/refresh_rate.sh'
 # fish_vi_key_bindings
+zoxide init fish | source
