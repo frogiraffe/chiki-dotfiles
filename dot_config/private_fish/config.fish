@@ -8,10 +8,10 @@ function ya
 end
 
 alias cat='bat'
-alias ls='eza --icons'                                                          # ls
-alias l='eza --icons --icons -lbF --git'                                                # list, size, type, git alias ll='eza --icons -lbGF --git'                                             # long list
-alias llm='eza --icons -lbGd --git --sort=modified'                            # long list, modified date sort
-alias la='eza --icons -lbhHiga  --git '  # all list
+alias ls='eza --icons' # ls
+alias l='eza --icons --icons -lbF --git' # list, size, type, git alias ll='eza --icons -lbGF --git'                                             # long list
+alias llm='eza --icons -lbGd --git --sort=modified' # long list, modified date sort
+alias la='eza --icons -lbhHiga  --git ' # all list
 alias lx='eza --icons -lbhHigUmuSa@ --time-style=long-iso --git --color-scale' # all + extended list
 alias chi='chezmoi edit --apply'
 
@@ -28,12 +28,12 @@ end
 set fish_greeting
 
 function ya
-	set tmp (mktemp -t "yazi-cwd.XXXXX")
-	yazi $argv --cwd-file="$tmp"
-	if set cwd (cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-		cd -- "$cwd"
-	end
-	rm -f -- "$tmp"
+    set tmp (mktemp -t "yazi-cwd.XXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if set cwd (cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
 end
 
 # Created by `pipx` on 2024-03-04 20:43:17

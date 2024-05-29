@@ -43,13 +43,15 @@ play = [
 pdf = [
 { run = 'zathura "$1"', block = false, orphan = true, display_name = "Show PDF"},
 ]
-#
+image = [
+{ run = 'vimiv --class="swayimgyazi" "$@"', block = false, orphan = true },
+]
 [open]
 rules = [
 	{ name = "*/", use = [ "edit", "open", "reveal" ] },
 
 	{ mime = "text/*",  use = [ "edit", "reveal" ] },
-	{ mime = "image/*", use = [ "open", "reveal" ] },
+	{ mime = "image/*", use = [ "image", "reveal" ] },
 	{ mime = "video/*", use = [ "play", "reveal" ] },
 	{ mime = "audio/*", use = [ "play", "reveal" ] },
 	{ mime = "inode/x-empty", use = [ "edit", "reveal" ] },
