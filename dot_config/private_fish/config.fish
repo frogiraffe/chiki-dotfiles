@@ -39,6 +39,6 @@ end
 # Created by `pipx` on 2024-03-04 20:43:17
 set PATH $PATH /home/chiki/.local/bin
 
-alias hertz='sh ~/.config/hypr/scripts/refresh_rate.sh'
+alias hertz='sh ~/.config/hypr/scripts/hertz.sh'
 # fish_vi_key_bindings
 zoxide init fish | source
