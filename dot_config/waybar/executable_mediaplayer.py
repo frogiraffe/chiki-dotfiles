@@ -27,6 +27,7 @@ def on_play(player, status, manager):
     on_metadata(player, player.props.metadata, manager)
 
 
+
 def on_metadata(player, metadata, manager):
     logger.info('Received new metadata')
     track_info = ''
@@ -36,15 +37,20 @@ def on_metadata(player, metadata, manager):
             ':ad:' in player.props.metadata['mpris:trackid']:
         track_info = 'AD PLAYING'
     elif player.get_artist() != '' and player.get_title() != '':
+        title = player.get_title()
+        if len(title) > 50:
+            title = title[:47] + '...'
         track_info = '{artist} - {title}'.format(artist=player.get_artist(),
-                                                 title=player.get_title())
+                                                 title=title)
     else:
-        track_info = player.get_title()
+        title = player.get_title()
+        if len(title) > 50:
+            title = title[:47] + '...'
+        track_info = title
 
     if player.props.status != 'Playing' and track_info:
         track_info = ' ' + track_info
     write_output(track_info, player)
-
 
 def on_player_appeared(manager, player, selected_player=None):
     if player is not None and (selected_player is None or player.name == selected_player):
@@ -126,5 +132,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
