@@ -4,27 +4,29 @@ SETUVAR --export EDITOR:/usr/bin/nvim
 SETUVAR --export GEM_HOME:/home/chiki/\x2egem
 SETUVAR --export --path GOPATH:/home/chiki/\x2ego
 SETUVAR --export --path PATH:/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/var/lib/flatpak/exports/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/usr/lib/rustup/bin\x1e/home/chiki/\x2elocal/bin\x1e\x2ecargo/bin
+SETUVAR --path RUST_SRC_PATH:/home/chiki/\x2erustup/toolchains/stable\x2dx86_64\x2dunknown\x2dlinux\x2dgnu/lib/rustlib/src/rust/library/
 SETUVAR R_LIBS_USER:/home/chiki/\x2eR
 SETUVAR --export SSH_AGENT_PID:813
 SETUVAR --export SSH_AUTH_SOCK:/run/user/1000/ssh\x2dagent\x2esocket
 SETUVAR --export SUDO_EDITOR:/usr/bin/nvim
 SETUVAR --export SYSTEMD_EDITOR:/usr/bin/nvim
 SETUVAR --export VISUAL:/usr/bin/nvim
-SETUVAR ZO_CMD:zo
-SETUVAR Z_CMD:z
-SETUVAR Z_DATA:/home/chiki/\x2elocal/share/z/data
 SETUVAR Z_DATA_DIR:/home/chiki/\x2elocal/share/z
-SETUVAR Z_EXCLUDE:\x5e/home/chiki\x24
 SETUVAR __fish_initialized:3400
-SETUVAR _fisher_jethrokuan_2F_z_files:\x7e/\x2econfig/fish/functions/__z\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_add\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_clean\x2efish\x1e\x7e/\x2econfig/fish/functions/__z_complete\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_hydro_files:\x7e/\x2econfig/fish/functions/fish_mode_prompt\x2efish\x1e\x7e/\x2econfig/fish/functions/fish_prompt\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/hydro\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/hydro\x1ejethrokuan/z
+SETUVAR _fisher_patrickf1_2F_fzf_2E_fish_files:\x7e/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_changed_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_diff_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_processes\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e\x7e/\x2econfig/fish/functions/_fzf_wrapper\x2efish\x1e\x7e/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e\x7e/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/hydro\x1epatrickf1/fzf\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _hydro_git_100408:main\x20\u21911\x20
-SETUVAR _hydro_git_12110:main\u2022\x20
+SETUVAR _hydro_git_11368:main\u2022\x20
+SETUVAR _hydro_git_128560:hypr\x20
+SETUVAR _hydro_git_13187:hypr\u2022\x20
+SETUVAR _hydro_git_13305:hypr\u2022\x20
 SETUVAR _hydro_git_13307:main\u2022\x20
 SETUVAR _hydro_git_138196:main\u2022\x20
+SETUVAR _hydro_git_147189:\x1d
+SETUVAR _hydro_git_1475:\x1d
 SETUVAR _hydro_git_15100:main\u2022\x20
 SETUVAR _hydro_git_15187:main\u2022\x20
 SETUVAR _hydro_git_15368:main\u2022\x20
@@ -34,6 +36,7 @@ SETUVAR _hydro_git_15683:main\u2022\x20
 SETUVAR _hydro_git_16202:main\u2022\x20
 SETUVAR _hydro_git_19254:main\u2022\x20
 SETUVAR _hydro_git_22206:main\u2022\x20
+SETUVAR _hydro_git_2224:main\u2022\x20
 SETUVAR _hydro_git_23454:main\u2022\x20
 SETUVAR _hydro_git_23502:main\u2022\x20
 SETUVAR _hydro_git_25120:main\u2022\x20
@@ -50,6 +53,7 @@ SETUVAR _hydro_git_3344:\x1d
 SETUVAR _hydro_git_3345:main\u2022\x20
 SETUVAR _hydro_git_33489:main\u2022\x20
 SETUVAR _hydro_git_33520:main\u2022\x20
+SETUVAR _hydro_git_3353:main\x20
 SETUVAR _hydro_git_3395:\x1d
 SETUVAR _hydro_git_34002:main\u2022\x20
 SETUVAR _hydro_git_34559:main\u2022\x20
@@ -58,7 +62,10 @@ SETUVAR _hydro_git_35479:main\u2022\x20
 SETUVAR _hydro_git_38017:main\u2022\x20
 SETUVAR _hydro_git_38411:main\u2022\x20
 SETUVAR _hydro_git_39385:main\u2022\x20
+SETUVAR _hydro_git_4134:main\u2022\x20
+SETUVAR _hydro_git_420940:\x1d
 SETUVAR _hydro_git_43269:main\u2022\x20
+SETUVAR _hydro_git_44170:main\u2022\x20
 SETUVAR _hydro_git_44246:main\u2022\x20
 SETUVAR _hydro_git_45150:main\u2022\x20
 SETUVAR _hydro_git_4653:main\x20
@@ -72,13 +79,18 @@ SETUVAR _hydro_git_5049:main\x20
 SETUVAR _hydro_git_50896:main\u2022\x20
 SETUVAR _hydro_git_5103:main\u2022\x20
 SETUVAR _hydro_git_51346:main\u2022\x20
+SETUVAR _hydro_git_51917:hypr\u2022\x20
 SETUVAR _hydro_git_56270:main\u2022\x20
 SETUVAR _hydro_git_57710:main\u2022\x20
+SETUVAR _hydro_git_58215:main\u2022\x20
 SETUVAR _hydro_git_5843:main\u2022\x20
+SETUVAR _hydro_git_5889:main\u2022\x20
 SETUVAR _hydro_git_60032:main\u2022\x20
+SETUVAR _hydro_git_6283:main\x20
 SETUVAR _hydro_git_68168:main\u2022\x20
 SETUVAR _hydro_git_69451:main\u2022\x20
 SETUVAR _hydro_git_7755:main\u2022\x20
+SETUVAR _hydro_git_79516:main\u2022\x20
 SETUVAR _hydro_git_9925:main\u2022\x20
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
@@ -108,4 +120,4 @@ SETUVAR fish_pager_color_description:yellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/chiki/\x2elocal/bin\x1e/home/chiki/\x2egem/ruby/3\x2e0\x2e0/bin\x1e/home/chiki/\x2elocal/share/gem/ruby/3\x2e0\x2e0/bin\x1e/home/chiki/\x2ecargo/bin
+SETUVAR fish_user_paths:/home/chiki/\x2erustup/toolchains/stable\x2dx86_64\x2dunknown\x2dlinux\x2dgnu/lib/rustlib/src/rust/src\x1e/home/chiki/\x2erustup/toolchains/stable\x2dx86_64\x2dunknown\x2dlinux\x2dgnu/lib/rustlib/src\x1e/home/chiki/\x2elocal/bin\x1e/home/chiki/\x2egem/ruby/3\x2e0\x2e0/bin\x1e/home/chiki/\x2elocal/share/gem/ruby/3\x2e0\x2e0/bin\x1e/home/chiki/\x2ecargo/bin

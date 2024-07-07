@@ -597,7 +597,7 @@ function render()
 end
 
 -- Request that render() is called.
--- The render is then either runuted immediately, or rate-limited if it was
+-- The render is then either executed immediately, or rate-limited if it was
 -- called a small time ago.
 state.render_timer = mp.add_timeout(0, render)
 state.render_timer:kill()

@@ -1,6 +1,7 @@
 #!/bin/bash
-# Define your monitor you can get it by typing hyprctl monitor
-MONITOR="eDP-2"
+# Get the monitor name
+MONITOR=$(xrandr --query | grep " connected" | cut -d ' ' -f1)
+
 STATE_FILE="/tmp/hertz_state"
 
 # If the state file does not exist, create it with a default value of 0
@@ -16,6 +17,7 @@ if [ "$STATE" == "0" ]; then
   wlr-randr --output $MONITOR --custom-mode 1920x1080@60.00222
   echo "1" > $STATE_FILE
 else
-  wlr-randr --output $MONITOR --mode 1920x1080@165.009995
+  wlr-randr --output $MONITOR --custom-mode 1920x1080@165.009995
   echo "0" > $STATE_FILE
 fi
+clear

@@ -1,5 +1,5 @@
 [pyprland]
-plugins = ["scratchpads","lost_windows"]
+plugins = ["scratchpads","lost_windows","expose"]
 
 [scratchpads.term]
 animation = "fromTop"

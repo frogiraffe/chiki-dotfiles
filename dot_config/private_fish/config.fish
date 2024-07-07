@@ -42,3 +42,9 @@ set PATH $PATH /home/chiki/.local/bin
 alias hertz='sh ~/.config/hypr/scripts/hertz.sh'
 # fish_vi_key_bindings
 zoxide init fish | source
+# pnpm
+set -gx PNPM_HOME "/home/chiki/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

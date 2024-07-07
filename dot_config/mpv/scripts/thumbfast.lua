@@ -46,7 +46,7 @@ local options = {
     -- Windows only: use native Windows API to write to pipe (requires LuaJIT)
     direct_io = false,
 
-    -- Custom path to the mpv runutable
+    -- Custom path to the mpv executable
     mpv_path = "mpv"
 }
 
